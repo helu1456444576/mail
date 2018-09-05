@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>989</width>
+    <height>617</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>699</width>
+    <height>545</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" columnstretch="0">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,4">
+     <property name="leftMargin">
+      <number>30</number>
+     </property>
+     <property name="topMargin">
+      <number>30</number>
+     </property>
+     <property name="rightMargin">
+      <number>10</number>
+     </property>
+     <property name="bottomMargin">
+      <number>30</number>
+     </property>
+     <item>
+      <widget class="QListWidget" name="listWidget">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::SingleSelection</enum>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="spacing">
+        <number>22</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>写信</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>17</pointsize>
+          <underline>false</underline>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+        <property name="background">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </property>
+        <property name="icon">
+         <iconset theme="写信图标">
+          <normaloff>../write_email (1).png</normaloff>
+          <normalon>:/new/icons/write_email (1).png</normalon>
+          <disabledoff>write_email.png</disabledoff>
+          <disabledon>write_email.png</disabledon>
+          <activeoff>write_email.png</activeoff>
+          <activeon>write_email (1).png</activeon>
+          <selectedoff>write_email.png</selectedoff>
+          <selectedon>../write_email.png</selectedon>../write_email (1).png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>收信</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>17</pointsize>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+        <property name="icon">
+         <iconset resource="styleprc.qrc">
+          <normaloff>:/new/icons/下载 (1).png</normaloff>
+          <normalon>../下载.png</normalon>
+          <selectedon>../下载.png</selectedon>:/new/icons/下载 (1).png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>通讯录</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>17</pointsize>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+        <property name="icon">
+         <iconset resource="styleprc.qrc">
+          <normaloff>:/new/icons/通讯录 (1).png</normaloff>
+          <normalon>../通讯录.png</normalon>:/new/icons/通讯录 (1).png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>草稿箱</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>已发送</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>垃圾箱</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QStackedWidget" name="stackedWidget">
+       <property name="focusPolicy">
+        <enum>Qt::StrongFocus</enum>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="pageWrite">
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_3" stretch="2,2,2,12">
+           <item>
+            <widget class="QWidget" name="widget_3" native="true">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(252, 175, 62,30);
+
+</string>
+             </property>
+             <widget class="QWidget" name="layoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>10</y>
+                <width>168</width>
+                <height>33</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
+                <widget class="QPushButton" name="sendMailBtn">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(238, 238, 236);</string>
+                 </property>
+                 <property name="text">
+                  <string>发送</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="saveDraftBtn">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(238, 238, 236);</string>
+                 </property>
+                 <property name="text">
+                  <string>存草稿</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QLabel" name="labelRecipient">
+               <property name="text">
+                <string>收件人</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditRecipient"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QLabel" name="labelTheme_2">
+               <property name="text">
+                <string>主    题</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEditTheme"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="0,0">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>正    文</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="textEditContent"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="pageReceive">
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout" stretch="2,1,1,15">
+           <item>
+            <widget class="QWidget" name="widget" native="true">
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(252, 175, 62,30);
+
+</string>
+             </property>
+             <widget class="QWidget" name="layoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>11</y>
+                <width>272</width>
+                <height>33</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <widget class="QPushButton" name="deleteCompleteBtn">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(238, 238, 236);</string>
+                 </property>
+                 <property name="text">
+                  <string>彻底删除</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="deleteCheckedBtn">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(238, 238, 236);</string>
+                 </property>
+                 <property name="text">
+                  <string>删除</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="markAllReadedBtn">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(238, 238, 236);</string>
+                 </property>
+                 <property name="text">
+                  <string>全部标为已读</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBox">
+             <property name="text">
+              <string>全选</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="Line" name="line">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableView" name="tableView"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="pageBook">
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_9" stretch="1,9">
+           <item>
+            <widget class="QWidget" name="widget_4" native="true">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(252, 175, 62,30);\n\n</string>
+             </property>
+             <widget class="QWidget" name="layoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>21</x>
+                <y>10</y>
+                <width>346</width>
+                <height>33</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_9">
+               <item>
+                <widget class="QPushButton" name="addContactBtn">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(238, 238, 236);</string>
+                 </property>
+                 <property name="text">
+                  <string>添加联系人</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_2">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(238, 238, 236);</string>
+                 </property>
+                 <property name="text">
+                  <string>新建群组</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="deleteContactBtn">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(238, 238, 236);</string>
+                 </property>
+                 <property name="text">
+                  <string>删除联系人</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="deleteGroupBtn">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(238, 238, 236);</string>
+                 </property>
+                 <property name="text">
+                  <string>删除群组</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="4,1">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_5" stretch="1,2,4">
+               <item>
+                <widget class="QCheckBox" name="checkBoxAllBook">
+                 <property name="text">
+                  <string>全选</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="Line" name="line_6">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QTableView" name="tableViewAllBook"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_4" stretch="1,12">
+               <item>
+                <widget class="QFrame" name="frame">
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <widget class="QLabel" name="label_2">
+                  <property name="geometry">
+                   <rect>
+                    <x>10</x>
+                    <y>0</y>
+                    <width>72</width>
+                    <height>36</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>18</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>通讯录</string>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <widget class="QListWidget" name="listWidgetBook">
+                 <item>
+                  <property name="text">
+                   <string>全部</string>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>15</pointsize>
+                   </font>
+                  </property>
+                  <property name="textAlignment">
+                   <set>AlignCenter</set>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="pageDraftBox">
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_6" stretch="2,2,1,15">
+           <item>
+            <widget class="QWidget" name="widget_5" native="true">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(252, 175, 62,30);\n\n</string>
+             </property>
+             <widget class="QWidget" name="layoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>187</width>
+                <height>33</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_10">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QPushButton" name="deleteDraft">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(238, 238, 236);</string>
+                 </property>
+                 <property name="text">
+                  <string>删除草稿</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="markDraftComboBox">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(238, 238, 236);</string>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>无标记</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>标为星标</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>取消星标</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBoxAllDraft">
+             <property name="text">
+              <string>全选</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="Line" name="line_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableView" name="tableViewDraft"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="pageSended">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_7">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_7" stretch="1,2,2,1,15">
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="font">
+              <font>
+               <pointsize>17</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>已发送</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_6" native="true">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(252, 175, 62,30);
+
+</string>
+             </property>
+             <widget class="QPushButton" name="deleteSendMailBtn">
+              <property name="geometry">
+               <rect>
+                <x>30</x>
+                <y>10</y>
+                <width>89</width>
+                <height>25</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(238, 238, 236);</string>
+              </property>
+              <property name="text">
+               <string>删除</string>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBoxAllSelect">
+             <property name="text">
+              <string>全选</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="Line" name="line_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableView" name="tableViewSended"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="pageRubbish">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_8">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_8" stretch="1,2,2,1,15">
+           <item>
+            <widget class="QLabel" name="label_6">
+             <property name="font">
+              <font>
+               <pointsize>17</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>垃圾箱</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_7" native="true">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(252, 175, 62,30);\n\n</string>
+             </property>
+             <widget class="QPushButton" name="pushButton">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>89</width>
+                <height>25</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(238, 238, 236);</string>
+              </property>
+              <property name="text">
+               <string>彻底删除</string>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBoxAllRubbish">
+             <property name="text">
+              <string>全选</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="Line" name="line_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableView" name="tableViewRubbish"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="pageReadMail">
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_2" stretch="2,1,1,2,13">
+           <item>
+            <widget class="QWidget" name="widget_2" native="true">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(252, 175, 62,30);\n\n</string>
+             </property>
+             <widget class="QWidget" name="layoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>11</x>
+                <y>10</y>
+                <width>368</width>
+                <height>33</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <widget class="QPushButton" name="replyBtn">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(238, 238, 236);</string>
+                 </property>
+                 <property name="text">
+                  <string>回复</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="deleteMailBtn">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(238, 238, 236);</string>
+                 </property>
+                 <property name="text">
+                  <string>删除</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="addNowContactBtn">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(238, 238, 236);</string>
+                 </property>
+                 <property name="text">
+                  <string>添加该联系人</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="comboBoxMark">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(238, 238, 236);</string>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>无标记</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>星标邮件</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>已读邮件</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>取消星标</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="labelSender">
+             <property name="text">
+              <string>发件人</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="Line" name="line_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="labelTheme">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>主题</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="textEdit">
+             <property name="font">
+              <font>
+               <pointsize>20</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="page_9"/>
+       <widget class="QWidget" name="pageReceiveBox"/>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="styleprc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

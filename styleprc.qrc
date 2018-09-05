@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>cssStyle.qss</file>
+    </qresource>
+    <qresource prefix="/new/icons">
+        <file>write_email (1).png</file>
+        <file>通讯录 (1).png</file>
+        <file>下载 (1).png</file>
+    </qresource>
+</RCC>
